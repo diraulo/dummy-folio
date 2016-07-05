@@ -1,3 +1,6 @@
+require 'extensions/build_cleaner'
+
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -18,6 +21,12 @@ page '/*.txt', layout: false
 
 # General configuration
 
+# Deployment configuration
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.deploy_method = :git
+end
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -36,6 +45,8 @@ end
 
 # Build-specific configuration
 configure :build do
+  activate :relative_assets
+  activate :build_cleaner
   # Minify CSS on build
   # activate :minify_css
 
