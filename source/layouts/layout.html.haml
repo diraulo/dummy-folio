@@ -5,11 +5,11 @@
     %meta{charset: 'utf-8'}
     %meta{content: 'width = device-width,initial-scale = 1.0,minimum-scale = 1.0,maximum-scale = 1.0,user-scalable = no name=viewport'}
 
-    %title= current_page.data.title || "Middleman"
-    -# %link{href: '//fonts.googleapis.com/css?family=Lato:300,400 rel = stylesheet type = text/css'}
+    %title= current_page.data.title || "Mikael Feher"
+    %link{href: '//fonts.googleapis.com/css?family=Lato:300,400 rel = stylesheet type = text/css'}
 
-    -# %script{:src => '/stylesheets/foundation.min.css'}
     %link{href: 'https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css'}
+    %link{href: 'http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css', rel: 'stylesheet'}
     = stylesheet_link_tag :site
 
     %script{src: 'https://code.jquery.com/jquery-2.1.4.min.js'}

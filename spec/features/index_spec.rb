@@ -3,22 +3,22 @@ describe 'index', type: :feature do
     visit '/'
   end
 
-  it 'says Hey Mikey!!! with a h1 tag' do
+  xit 'says Hey Mikey!!! with a h1 tag' do
     expect(page).to have_selector 'h1'
     within 'h1' do
       expect(page).to have_content 'Hey Mikey!!!'
     end
   end
 
-  it 'shows a link to documentation' do
+  xit 'shows a link to documentation' do
     expect(page).to have_css 'a', text: 'Read Documentation Online'
   end
 
-  it 'shows an image' do
+  xit 'shows an image' do
     expect(page).to have_css 'img[src="/images/middleman-logo.svg"]'
   end
 
-  it 'displays project list' do
+  xit 'displays project list' do
     expect(page).to have_css '.projects'
     within '.projects' do
       expect(page).to have_content 'My First Website'
@@ -26,7 +26,7 @@ describe 'index', type: :feature do
     end
   end
 
-  it 'renders footer partial' do
+  xit 'renders footer partial' do
     expect(page).to have_selector 'footer'
     within 'footer' do
       expect(page).to have_content 'My Portfolio'
@@ -34,5 +34,16 @@ describe 'index', type: :feature do
     end
   end
 
+  it 'displays text added by js' do
+    expect(page).to have_text 'Added this'
+  end
+
+  it 'navigates to FizzBuzz' do
+    within '#main-menu' do
+      click_link 'Projects'
+      click_link 'FizzBuzz'
+    end
+    expect(page.current_path).to eq '/fizz_buzz_js/'
+  end
 
 end

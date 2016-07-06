@@ -15,4 +15,5 @@ group :development, :test do
   gem 'pry'
   gem 'launchy'
   gem 'rspec'
+  gem 'poltergeist'
 end

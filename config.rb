@@ -1,5 +1,5 @@
 require 'extensions/build_cleaner'
-
+require 'lib/icon_helper'
 
 ###
 # Page options, layouts, aliases and proxies
@@ -34,6 +34,7 @@ end
 
 ###
 # Helpers
+helpers IconHelper
 ###
 
 # Methods defined in the helpers block are available in templates

@@ -1,0 +1,11 @@
+- name: Email
+  link: mailto:mikael.feher@gmail.com?Subject=I%20saw%20your%20webpage
+  
+- name: LinkedIn
+  url: https://se.linkedin.com/in/mikael-feher-79b324105
+
+- name: GitHub
+  url: https://github.com/MikaelFeher
+
+- name: Twitter
+  url: https://twitter.com/feher77

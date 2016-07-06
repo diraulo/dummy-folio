@@ -1,3 +1,26 @@
-%footer
-  %h3 My Portfolio
-  %p Built with the awsome Middleman framework
+%footer.footer
+  .row
+    .small-12.medium-6.large-5.columns
+      %p.logo
+        %i.fi-shield
+        Mikael Feher
+      %p.footer-links
+        %a{href: '#'} Top
+        %a{href: '#'} Projects
+        %a{href: '#'} About Me
+        %a{href: '#'} Contact
+        %a{href: 'https://craftacademy.se/', target: '_blank'} Craft Academy
+      %p.copywrite Copywrite Mikael Feher © 2016
+
+    .small-12.medium-12.large-3.columns
+      %p.about Contact Info
+      %p.about.subheader If you want to get in touch with me please click one of the links below.
+      %ul.inline-list.social
+        %a{href: 'mailto:mikael.feher@gmail.com?Subject=I%20saw%20your%20webpage', target: '_top'}
+          %i.fi-mail
+        %a{:href => 'https://se.linkedin.com/in/mikael-feher-79b324105', target: '_blank'}
+          %i.fi-social-linkedin
+        %a{:href => 'https://github.com/MikaelFeher', target: '_blank'}
+          %i.fi-social-github
+        %a{:href => 'https://twitter.com/feher77', target: '_blank'}
+          %i.fi-social-twitter
