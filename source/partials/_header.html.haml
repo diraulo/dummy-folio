@@ -7,14 +7,14 @@
       %li.menu-text Mikael Feher
   .top-bar-right
     %ul.menu{"data-responsive-menu" => "drilldown medium-dropdown"}
-      %li.has-submenu
-        %a{:href => "#"} Projects
-        %ul.submenu.menu.vertical{"data-submenu" => ""}
-          - data.projects.each do |project|
-            %li
-              = link_to project[:name], project[:url], target: '_blank'
       %li
-        %a{:href => "#"} About Me
+        %a{href: 'project'} Projects
+        -# %ul.submenu.menu.vertical{"data-submenu" => ""}
+        -#   - data.projects.each do |project|
+        -#     %li
+        -#       = link_to project[:name], project[:url], target: '_blank'
+      %li
+        %a{href: 'about'} About Me
         %li.has-submenu
           %a{:href => "#"} Contact
           %ul.submenu.menu.vertical{"data-submenu" => ""}
@@ -23,3 +23,4 @@
                 = link_to contact[:url], target: '_blank' do
                   %i{class: get_icon(contact[:name])}
                   = contact[:name]
+%li.has-submenu

@@ -69,6 +69,12 @@ $menu-background: #222222;
   border-color: transparent #fff transparent transparent;
 }
 
+// Body
+.intro {
+  text-align: center;
+}
+
+
 // Footer
 .hero {
   background: url('http://www.banksy-wallpaper.com/wallpapers/800x600/10-i-am-father.jpg') no-repeat center center;
@@ -88,7 +94,6 @@ $menu-background: #222222;
 }
 
 .footer {
-  // background: $menu-background;
   background-color: $menu-background;
   text-align: center;
   font-size: 1.2rem;
