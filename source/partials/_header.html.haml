@@ -8,19 +8,14 @@
   .top-bar-right
     %ul.menu{"data-responsive-menu" => "drilldown medium-dropdown"}
       %li
-        %a{href: 'project'} Projects
-        -# %ul.submenu.menu.vertical{"data-submenu" => ""}
-        -#   - data.projects.each do |project|
-        -#     %li
-        -#       = link_to project[:name], project[:url], target: '_blank'
+        = link_to 'Projects', '/projects.html'
       %li
-        %a{href: 'about'} About Me
+        = link_to 'About Me', '/about.html' 
         %li.has-submenu
-          %a{:href => "#"} Contact
+          %a{:href => "#"} Contact Info
           %ul.submenu.menu.vertical{"data-submenu" => ""}
             - data.contact.each do |contact|
               %li
                 = link_to contact[:url], target: '_blank' do
                   %i{class: get_icon(contact[:name])}
                   = contact[:name]
-%li.has-submenu

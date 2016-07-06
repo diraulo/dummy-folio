@@ -34,16 +34,15 @@ describe 'index', type: :feature do
     end
   end
 
-  it 'displays text added by js' do
+  xit 'displays text added by js' do
     expect(page).to have_text 'Added this'
   end
 
-  it 'navigates to FizzBuzz' do
+  it 'navigates to Projects page' do
     within '#main-menu' do
       click_link 'Projects'
-      click_link 'FizzBuzz'
     end
-    expect(page.current_path).to eq '/fizz_buzz_js/'
+    expect(page.current_path).to eq '/projects'
   end
 
 end
