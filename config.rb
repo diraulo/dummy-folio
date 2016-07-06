@@ -20,7 +20,9 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # General configuration
+set :relative_links, true
 activate :directory_indexes
+activate :i18n
 # Deployment configuration
 activate :deploy do |deploy|
   deploy.build_before = true
@@ -48,9 +50,9 @@ helpers IconHelper
 configure :build do
   activate :relative_assets
   activate :build_cleaner
+end
   # Minify CSS on build
   # activate :minify_css
 
   # Minify Javascript on build
   # activate :minify_javascript
-end

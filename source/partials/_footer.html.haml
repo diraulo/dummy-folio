@@ -1,20 +1,18 @@
 %footer.footer
   .row
     .small-12.medium-6.large-5.columns
-      -# %p.logo
-      -#   %i.fi-shield
-      -#   Mikael Feher
+
       %p.footer-links
-        = link_to 'Home', '/'
-        = link_to 'Projects', '/projects'
-        = link_to 'About Me', '/about'
+        = link_to t(:link_home), '/index.html'
+        = link_to t(:link_projects), '/projects.html'
+        = link_to t(:link_about), '/about.html'
         = link_to 'Craft Academy', '//craftacademy.se', target: '_blank'
-        -# %a{href: 'https://craftacademy.se/', target: '_blank'} Craft Academy
+
       %p.copywrite Copywrite Mikael Feher © 2016
 
     .small-12.medium-12.large-3.columns
-      -# %p.about Contact Info
-      %p.about.subheader If you want to get in touch with me please click one of the links below.
+
+      %p.about.subheader= t(:social_link_info)
       %ul.inline-list.social
         %a{href: 'mailto:mikael.feher@gmail.com?Subject=I%20saw%20your%20webpage', target: '_top'}
           %i.fi-mail

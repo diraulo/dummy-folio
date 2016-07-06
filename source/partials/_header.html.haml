@@ -8,12 +8,12 @@
   .top-bar-right
     %ul.menu{"data-responsive-menu" => "drilldown medium-dropdown"}
       %li
-        = link_to 'Projects', '/projects'
+        = link_to t(:link_projects), '/projects.html'
       %li
-        = link_to 'About Me', '/about'
+        = link_to t(:link_about), '/about.html'
         %li.has-submenu
-          %a{:href => "#"} Contact Info
-          %ul.submenu.menu.vertical{"data-submenu" => ""}
+          %a{:href => ''}= t(:link_contact)
+          %ul.submenu.menu.vertical{"data-submenu" => ''}
             - data.contact.each do |contact|
               %li
                 = link_to contact[:url], target: '_blank' do
