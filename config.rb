@@ -20,7 +20,7 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # General configuration
-
+activate :directory_indexes
 # Deployment configuration
 activate :deploy do |deploy|
   deploy.build_before = true
